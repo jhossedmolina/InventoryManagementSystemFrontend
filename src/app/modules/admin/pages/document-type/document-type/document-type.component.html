@@ -1,0 +1,17 @@
+<header>
+  <mat-toolbar>
+    <span>{{ title }}</span>
+  </mat-toolbar>
+</header>
+
+<nav>
+  <mat-tab-group [backgroundColor]="background">
+    <mat-tab label="Ver Tipos De Documento">
+      <app-document-type-list></app-document-type-list>
+    </mat-tab>
+    <mat-tab label="Agregar Tipos De Documento">
+      <app-add-document-type></app-add-document-type>
+    </mat-tab>
+  </mat-tab-group>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

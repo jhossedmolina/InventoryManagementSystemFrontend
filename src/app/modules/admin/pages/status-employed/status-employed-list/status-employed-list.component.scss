@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+}
+
+.mat-column-code {
+  width: 50px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.mat-column-name {
+  padding-left: 16px;
+  border-right: 1px solid currentColor;
+  text-align: center;
+  font-size: 20px;
+}
+
+.mat-column-actions {
+  padding-left: 16px;
+  border-right: 1px solid currentColor;
+  text-align: center;
+  font-size: 20px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 10px;
+}

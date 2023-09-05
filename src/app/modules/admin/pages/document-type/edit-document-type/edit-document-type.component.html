@@ -1,0 +1,31 @@
+<form [formGroup]="editDocumentTypeForm" (ngSubmit)="saveChanges()">
+  <h1 mat-dialog-title>{{ inputData.title }}</h1>
+  <div mat-dialog-content>
+    <mat-label>{{ inputData.nameLabel1 }}</mat-label>
+    <mat-form-field>
+      <input
+        matInput
+        #input
+        minlength="2"
+        maxlength="7"
+        formControlName="code"
+      />
+    </mat-form-field>
+    <mat-label>{{ inputData.nameLabel2 }}</mat-label>
+    <mat-form-field>
+      <input
+        matInput
+        #input
+        minlength="4"
+        maxlength="50"
+        formControlName="name"
+      />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="accent" type="submit">Guardar</button>
+    <button mat-raised-button color="warn" (click)="closeDialog()">
+      Cancelar
+    </button>
+  </div>
+</form>

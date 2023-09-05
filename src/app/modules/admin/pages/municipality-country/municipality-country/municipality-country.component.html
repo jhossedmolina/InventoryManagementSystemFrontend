@@ -1,0 +1,17 @@
+<header>
+  <mat-toolbar>
+    <span>{{ title }}</span>
+  </mat-toolbar>
+</header>
+
+<nav>
+  <mat-tab-group [backgroundColor]="background">
+    <mat-tab label="Ver Ciudades Y Municipios">
+      <app-municipality-country-list></app-municipality-country-list>
+    </mat-tab>
+    <mat-tab label="Agregar Ciudades Y Municipios">
+      <app-add-municipality-country></app-add-municipality-country>
+    </mat-tab>
+  </mat-tab-group>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

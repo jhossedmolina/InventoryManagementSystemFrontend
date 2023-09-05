@@ -1,0 +1,17 @@
+<header>
+  <mat-toolbar>
+    <span>{{ title }}</span>
+  </mat-toolbar>
+</header>
+
+<nav>
+  <mat-tab-group [backgroundColor]="background">
+    <mat-tab label="Ver Estados De Empleado">
+      <app-status-employed-list></app-status-employed-list>
+    </mat-tab>
+    <mat-tab label="Agregar Estado De Empleado">
+      <app-add-status-employed></app-add-status-employed>
+    </mat-tab>
+  </mat-tab-group>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
